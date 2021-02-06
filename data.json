@@ -1,0 +1,9 @@
+{
+    "discord": {
+        "token": "",
+        "id": ""
+    },
+    "auth": {
+        "authorized_users": []
+    }
+}
