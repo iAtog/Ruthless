@@ -5,5 +5,11 @@
     },
     "auth": {
         "authorized_users": []
+    },
+    "mongodb": {
+        "user": "",
+        "password": "",
+        "database": "",
+        "cluster": ""
     }
 }
