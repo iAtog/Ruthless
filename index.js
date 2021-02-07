@@ -47,7 +47,7 @@ Client.on("message", async(msg) => {
     const [, matchedPrefix] = msg.content.match(prefix);
     let command = msg.content.split(" ")[0].slice(matchedPrefix.length).toLowerCase();
     if(!Client.commands.has(command) && !Client.aliases.has(command))return;
-    let Cmd = Client.commands.get(command) || Client.aliases.get(command);
+    let Cmd = Client.commands.get(command)||Client.aliases.get(command);
     let cmd = new Cmd(Client);
     await cmd._executeCMD_(msg);
     if(Client.settings.logExecutions)Client.logger.info(msg.author.tag+" ejecutó el comando: "+msg.content.slice(matchedPrefix.length));
