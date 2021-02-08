@@ -55,7 +55,7 @@ Client.on("ready", () => {
         type: Client.settings.presence,
         url: Client.settings.url
     });
-    let x = require('./data.json');
+    let x = require(Client.getData());
     x.discord.id = Client.user.id;
     fs.writeFileSync(path.join(__dirname, "data.json"), JSON.stringify(x), 'utf8');
     Client.logger.info("Sesión iniciada en: "+Client.user.tag);
