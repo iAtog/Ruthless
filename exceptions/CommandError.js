@@ -11,5 +11,4 @@ class CommandError extends Error {
       return this.status
     }
   }
-  
 module.exports = CommandError;
