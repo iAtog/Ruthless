@@ -1,4 +1,7 @@
-module.exports = class Eval extends Handler {
+const Handler = require('../../lib/CommandHandler'),
+      {Message} = require('discord.js');
+
+module.exports = class Missions extends Handler {
     constructor(client) {
       super(client, {
         name: "missions",
@@ -9,7 +12,10 @@ module.exports = class Eval extends Handler {
         permissions: []
       });
     }
-
+    /**
+     * @param {Message} msg 
+     * @param {String[]} args 
+     */
     run(msg, args) {
         
     }
