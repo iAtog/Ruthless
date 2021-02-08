@@ -4,7 +4,8 @@
         "id": ""
     },
     "auth": {
-        "authorized_users": []
+        "authorized_users": [],
+        "admin_users": []
     },
     "mongodb": {
         "user": "",

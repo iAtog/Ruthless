@@ -2,5 +2,6 @@
     "prefix": "rth/",
     "presence": "COMPETING",
     "url": "https://twitch.tv/elsexyatog",
-    "diabledEvents": []
+    "diabledEvents": [],
+    "blockedUsers": []
 }
