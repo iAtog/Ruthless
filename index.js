@@ -6,6 +6,14 @@ const User = Client.user;
 const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const path = require('path');
 
+// Compatibility with free hosts lmao
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send("Yes"));
+
+app.listen(3000);
+
 function registerCommands() {
     return new Promise(async(s, r) => {
         fs.readdir(__dirname + "/commands", (err, files) => {

@@ -24,6 +24,7 @@
   "homepage": "https://github.com/iAtog/Ruthless#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
+    "express": "^4.17.1",
     "mongoose": "^5.11.15",
     "node-superfetch": "^0.1.11"
   }
