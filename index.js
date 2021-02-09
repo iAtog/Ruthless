@@ -75,7 +75,7 @@ Client.on("message", async(msg) => {
     if(Client.settings.logExecutions)Client.logger.info(msg.author.tag+" ejecutó el comando: "+msg.content.slice(matchedPrefix.length));
 });
 
-Client.login(Client.data.discord.token).catch((e) => {
+Client.login(Client.getToken()).catch((e) => {
     //console.log(Client.data);
     Client.logger.error("No se ha podido conectar con la aplicación, ó el acceso dado no es válido.")
     process.exit(1);
