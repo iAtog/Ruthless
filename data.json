@@ -1,1 +1,16 @@
-{"discord":{"token":"ODA3Njc0NzgwOTU0MDAxNDEw.YB7bwQ.qx_HyEc2DGrWdHe1ra55fYUz79g","id":"807674780954001410"},"auth":{"authorized_users":["709952605601923152","761966061531693087"],"admin_users":[]},"mongodb":{"user":"","password":"","database":"","cluster":""}}
+{
+    "discord": {
+        "token": "",
+        "id": "807674780954001410"
+    },
+    "auth": {
+        "authorized_users": ["709952605601923152", "761966061531693087"],
+        "admin_users": []
+    },
+    "mongodb": {
+        "user": "",
+        "password": "",
+        "database": "",
+        "cluster": ""
+    }
+}
