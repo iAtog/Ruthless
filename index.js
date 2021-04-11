@@ -5,6 +5,8 @@ const fs = require('fs');
 const User = Client.user;
 const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const path = require('path');
+require('dotenv').config();
+
 
 // Compatibility with free hosts lmao
 const express = require('express');
@@ -59,10 +61,10 @@ function registerEvents() {
 registerEvents().then(() => Client.logger.info("Eventos cargados correctamente."));
 
 Client.on("ready", () => {
-    Client.user.setActivity('Ruthless gang | '+Client.settings.prefix+"help 🤖", {
+    /*Client.user.setActivity('Ruthless gang | '+Client.settings.prefix+"help 🤖", {
         type: Client.settings.presence,
         url: Client.settings.url
-    });
+    });*/
     let x = require(Client.getData());
     x.discord.id = Client.user.id;
     fs.writeFileSync(path.join(__dirname, "data.json"), JSON.stringify(x), 'utf8');
@@ -83,7 +85,7 @@ Client.on("message", async(msg) => {
     if(Client.settings.logExecutions)Client.logger.info(msg.author.tag+" ejecutó el comando: "+msg.content.slice(matchedPrefix.length));
 });
 
-Client.login(Client.getToken()).catch((e) => {
+Client.login(process.env.TOKEN).catch((e) => {
     //console.log(Client.data);
     Client.logger.error("No se ha podido conectar con la aplicación, ó el acceso dado no es válido.")
     process.exit(1);

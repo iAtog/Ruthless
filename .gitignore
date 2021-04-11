@@ -1,2 +1,4 @@
 node_modules/
 personaldata.json
+.env
+start.bat

@@ -1,7 +1,11 @@
 {
-    "prefix": "rth/",
+    "prefix": "rd/",
     "presence": "COMPETING",
     "url": "https://twitch.tv/elsexyatog",
     "diabledEvents": [],
-    "blockedUsers": []
+    "blockedUsers": [],
+    "perms": {
+        "owner": ["709952605601923152", "761966061531693087"],
+        "admin": []
+    }
 }
